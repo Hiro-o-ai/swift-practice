@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="O22-i6-dYP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="835-wK-P7f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YT5-NU-Dzm">
+                                <rect key="frame" x="0.0" y="78" width="414" height="784"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YT5-NU-Dzm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OfN-DX-Ig0"/>
+                            <constraint firstItem="O22-i6-dYP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RJ0-Fc-k3x"/>
+                            <constraint firstItem="YT5-NU-Dzm" firstAttribute="top" secondItem="O22-i6-dYP" secondAttribute="bottom" id="bpt-dI-FOA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O22-i6-dYP" secondAttribute="trailing" id="e3f-Sh-vye"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YT5-NU-Dzm" secondAttribute="trailing" id="fbR-vK-g7T"/>
+                            <constraint firstItem="O22-i6-dYP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rRb-bn-fVo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YT5-NU-Dzm" secondAttribute="bottom" id="uD6-P7-a99"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dispMap" destination="YT5-NU-Dzm" id="Fox-AD-xvF"/>
+                        <outlet property="inputText" destination="O22-i6-dYP" id="4fU-xD-yfU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="117.85714285714285"/>
+        </scene>
+    </scenes>
+</document>
