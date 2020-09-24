@@ -26,9 +26,17 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="YT5-NU-Dzm">
                                 <rect key="frame" x="0.0" y="78" width="414" height="784"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x17-Y9-gxw">
+                                <rect key="frame" x="373" y="830" width="25" height="24"/>
+                                <connections>
+                                    <action selector="changeMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0a5-NO-9By"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x17-Y9-gxw" secondAttribute="trailing" constant="16" id="A2i-Cw-1cZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="x17-Y9-gxw" secondAttribute="bottom" constant="8" id="AdW-YF-SSB"/>
                             <constraint firstItem="YT5-NU-Dzm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OfN-DX-Ig0"/>
                             <constraint firstItem="O22-i6-dYP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RJ0-Fc-k3x"/>
                             <constraint firstItem="YT5-NU-Dzm" firstAttribute="top" secondItem="O22-i6-dYP" secondAttribute="bottom" id="bpt-dI-FOA"/>
